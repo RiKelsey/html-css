@@ -11,6 +11,8 @@
 
         table {
             width: 500px;
+            border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -18,9 +20,31 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+            border: 1px solid black;
+            border-bottom: 0px;
+        }
+
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+
+        thead {
+            position: sticky;
+            top: -1px;
+        }
+    
+        tbody tr:nth-child(odd) { /* 2n-1*/
+            background-color: white;
+        }
+
+        tbody tr:nth-child(even) { /* 2n*/
+            background-color: lightgray;
         }
 
         td.num{
@@ -33,6 +57,7 @@
     <h1>Uso de tabelas grandes</h1>
     <!-- Anatomia para tabelas grandes
      Table 
+        CAPTION
         THEAD
             TR, TD, TH
         TBODY
@@ -41,10 +66,11 @@
             TR, TD, TH
     -->
     <table>
+        <caption>População Das Unidades Federativas</caption>
         <thead>
             <tr>
                 <th>Estado</th>
-                <th class="num">População</th>
+                <th class="num" style="width: 98px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -191,5 +217,15 @@
             </tr>
         </tfoot>
     </table>
+ <!-- Esses <p> só estão ai para lembrar que o head ali não fica flutuando no site, ele só vai até o fim da tabela-->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad voluptatibus eveniet ipsa nihil! Deleniti, velit ullam labore facilis eaque repellat repudiandae dolore similique impedit voluptatum, nulla doloremque delectus? Autem, consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quaerat sed nihil praesentium odio inventore, ut cum, eveniet distinctio doloribus exercitationem ad, deserunt repellat magni dicta labore minus repellendus unde! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus adipisci sed tenetur distinctio laboriosam qui, consequatur, architecto vel vitae tempore at molestias debitis illo quo quas nisi voluptates! Soluta, inventore! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque iste distinctio corporis sapiente, velit vel. Aliquam illum quae corrupti, consequuntur libero nesciunt ab dolorum unde aperiam natus voluptatum blanditiis quis.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad voluptatibus eveniet ipsa nihil! Deleniti, velit ullam labore facilis eaque repellat repudiandae dolore similique impedit voluptatum, nulla doloremque delectus? Autem, consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quaerat sed nihil praesentium odio inventore, ut cum, eveniet distinctio doloribus exercitationem ad, deserunt repellat magni dicta labore minus repellendus unde! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus adipisci sed tenetur distinctio laboriosam qui, consequatur, architecto vel vitae tempore at molestias debitis illo quo quas nisi voluptates! Soluta, inventore! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque iste distinctio corporis sapiente, velit vel. Aliquam illum quae corrupti, consequuntur libero nesciunt ab dolorum unde aperiam natus voluptatum blanditiis quis.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad voluptatibus eveniet ipsa nihil! Deleniti, velit ullam labore facilis eaque repellat repudiandae dolore similique impedit voluptatum, nulla doloremque delectus? Autem, consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quaerat sed nihil praesentium odio inventore, ut cum, eveniet distinctio doloribus exercitationem ad, deserunt repellat magni dicta labore minus repellendus unde! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus adipisci sed tenetur distinctio laboriosam qui, consequatur, architecto vel vitae tempore at molestias debitis illo quo quas nisi voluptates! Soluta, inventore! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque iste distinctio corporis sapiente, velit vel. Aliquam illum quae corrupti, consequuntur libero nesciunt ab dolorum unde aperiam natus voluptatum blanditiis quis.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad voluptatibus eveniet ipsa nihil! Deleniti, velit ullam labore facilis eaque repellat repudiandae dolore similique impedit voluptatum, nulla doloremque delectus? Autem, consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quaerat sed nihil praesentium odio inventore, ut cum, eveniet distinctio doloribus exercitationem ad, deserunt repellat magni dicta labore minus repellendus unde! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus adipisci sed tenetur distinctio laboriosam qui, consequatur, architecto vel vitae tempore at molestias debitis illo quo quas nisi voluptates! Soluta, inventore! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque iste distinctio corporis sapiente, velit vel. Aliquam illum quae corrupti, consequuntur libero nesciunt ab dolorum unde aperiam natus voluptatum blanditiis quis.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad voluptatibus eveniet ipsa nihil! Deleniti, velit ullam labore facilis eaque repellat repudiandae dolore similique impedit voluptatum, nulla doloremque delectus? Autem, consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quaerat sed nihil praesentium odio inventore, ut cum, eveniet distinctio doloribus exercitationem ad, deserunt repellat magni dicta labore minus repellendus unde! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus adipisci sed tenetur distinctio laboriosam qui, consequatur, architecto vel vitae tempore at molestias debitis illo quo quas nisi voluptates! Soluta, inventore! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque iste distinctio corporis sapiente, velit vel. Aliquam illum quae corrupti, consequuntur libero nesciunt ab dolorum unde aperiam natus voluptatum blanditiis quis.</p>
 </body>
 </html>
