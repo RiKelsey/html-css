@@ -15,6 +15,20 @@ header > h1 {
     text-align: center;
 }
 
+#burguer {
+    background-color: rgb(48, 48, 48);
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer; /* Mudar o desenho de seta para uma mãozinha */
+}
+
+#burguer:hover {
+    background-color: white;
+    color: black;
+}
+
 menu {
     display: block;
 }
